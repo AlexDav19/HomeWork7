@@ -76,7 +76,7 @@ public class Main {
         while (sum <= target) {
             months++;
             sum += deposit;
-            sum += (sum * percent / 1200);
+            sum += (sum * percent / 100);
             if (months % 6 == 0) {
                 System.out.printf("Месяц %d, сумма накоплений равна %.2f рублей%n", months, sum);
             }
